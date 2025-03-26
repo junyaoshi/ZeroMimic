@@ -48,3 +48,7 @@ The script will generate a video to visualize the action prediction of human han
 python example.py debug_eval_path="/path/to/your/checkpoint/folder"
 ```
 ![Demo Video](docs/vis_video_open_drawer.gif)
+
+## Acknowledgement
+
+This codebase is adapted from [ACT: Action Chunking with Transformers](https://github.com/tonyzhaozh/act) and [Imitation Learning algorithms and Co-training for Mobile ALOHA](https://github.com/MarkFzp/act-plus-plus).
