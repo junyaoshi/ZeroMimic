@@ -1,0 +1,15 @@
+policy_class: ACT
+state_dim: 3  # hand wrist: 3; act: 14
+
+# backbone
+lr_backbone: 5e-5  # unused, will be overwritten by lr in config.yaml
+backbone: 'resnet18'
+
+# ACT
+enc_layers: 4
+dec_layers: 7
+latent_dim: 32  # final size of latent z
+nheads: 8
+hidden_dim: 512
+dim_feedforward: 3200
+temporal_agg: false

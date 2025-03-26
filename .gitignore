@@ -1,0 +1,6 @@
+__pycache__/
+outputs/
+3D_hand_actions/
+example_task_data/
+example_data.py
+copy_example_task_data_given_task.py

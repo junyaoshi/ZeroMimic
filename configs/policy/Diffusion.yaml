@@ -1,0 +1,16 @@
+policy_class: Diffusion
+state_dim: 3  # hand wrist: 3; act: 14
+
+# backbone
+lr_backbone: 5e-5  # unused, will be overwritten by lr in config.yaml
+backbone: 'resnet18'
+
+# Diffusion
+camera_names: ['ego']
+observation_horizon: 1
+action_horizon: 8 # chunk size
+prediction_horizon: 16 # chunk size
+num_inference_timesteps: 16
+ema_power: 0.75
+lr: 1e-4
+action_dim: 3

@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - policy: ACT
+
+# policy、
+seed: 0
+chunk_size: 10  # chunk size
+backbone: resnet18
+mode: reltraj_relori # [abs, rel]traj_[abs, rel]ori
+lr: 6e-5  
+goal_conditioned: true  # include goal image in input
+kl_weight: 10
+loss: l1
+cos_sim_weight: 1
+mag_diff_weight: 0
+eval_epoch: 50
+parallel: DataParallel
+
+# eval
+use_eval_norm_stats: false
+debug_eval_path: # Add path here or in command line
